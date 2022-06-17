@@ -1,0 +1,63 @@
+<html>
+<head>
+	<!--  引入样式文件 -->
+    <link rel="stylesheet" href="dist/reveal.css">
+    <!--  主题颜色（可自主选择） -->
+    <link rel="stylesheet" href="dist/theme/moon.css">
+    <link href='https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css' rel='stylesheet'>
+    <style>
+        .slide-two .img-wrapper{
+            width: 400px;
+            height: 400px;
+            border-radius: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <section>                    
+                    Hi, my little friend
+                </section>
+                <section>It's been a long time...</section>
+                <section>since we last met</section>
+                <section>So lucky to retie our relationship!</section>
+            </section>
+            <section class="container slide-two">
+                <div class="row">
+                    <div class="col-md-4" >
+                        <div class="img-wrapper">                            
+                            <img src="img/food.jpg" alt="">
+                        </div>
+                        <!-- <div class="img-wrapper">                            
+                            <img src="img/food1.jpg" alt="">
+                        </div> -->
+                    </div>
+                    <div class="col-md-8">chat</div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            // 是否在右下角展示控制条
+            controls: true,
+            // 是否显示演示的进度条
+            progress: true,
+            // 是否显示当前幻灯片的页数
+            slideNumber: 'c/t',
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
+
+</html>
